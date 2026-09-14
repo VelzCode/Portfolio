@@ -1,0 +1,76 @@
+@import "./Variables.css";
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0b111e 0%, #121b2d 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+
+.nav-l {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0 20px 40px;
+    padding: 10px 20px 10px 10px;
+}
+
+.nav-l span {
+    font-weight: 500;
+    color: var(--color);
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 0;
+    padding: 30px 40px;
+}
+
+.nav-bar a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color);
+    text-decoration: none;
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 40px 20px 0;
+    padding: 30px 40px 30px 32px;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.links-box a {
+    font-weight: 500;
+    color: var(--color);
+    text-decoration: none;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.link-item:hover {
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}

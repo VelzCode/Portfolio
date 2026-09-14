@@ -1,0 +1,37 @@
+@import "./Variables.css";
+
+.col-b {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px;
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--box-shadow);
+}
+
+.col-p-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.col-h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.col-h2-focus {
+    color: var(--text-on-white);
+}
+
+.col-p-main {
+    font-size: 1.1rem;
+    padding-bottom: 18px;
+}
+

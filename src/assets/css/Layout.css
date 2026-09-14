@@ -1,0 +1,7 @@
+@import "./Variables.css";
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}

@@ -1,0 +1,53 @@
+@import "./Variables.css";
+
+.col-a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--box-shadow);
+}
+
+.content-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h2-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.h1-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.content-p-header {
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+.content-p-focus {
+    color: var(--text-on-white);
+}
+
+.h2-focus {
+    color: var(--text-on-white);
+}
+
+.h1-focus {
+    color: var(--text-on-white2);
+}
+
+.content-p-header-em {
+    padding-top: 20px;    
+}

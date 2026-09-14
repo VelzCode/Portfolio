@@ -1,16 +1,21 @@
-import { useState } from "react";
 import "./assets/css/App.css";
+import Navbar from "./components/Navbar.jsx";
+import Layout from "./components/Layout.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
 
 function App() {
-    const [count, setCount] = useState(0)
 
     return (
-        <section className="nav-wrapper">
-            <div className="nav-bar">
-                <a href="#">Home</a>
-            </div>
-        </section>
-  )
+        <>
+            <Navbar />
+            <Layout>
+                <Hero />
+                <About />
+            </Layout>
+            
+        </>
+    );
 }
 
 export default App;
