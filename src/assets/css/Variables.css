@@ -1,7 +1,11 @@
 :root {
     --color: #c1baba;
     --bgcolor: #000;
+    --dplogo-color: #0b111e;
+    --darkhr-color: #191e29;
     --box-shadow: rgba(56, 189, 248, 0.25);
     --text-on-white: #d21818;
     --text-on-white2: #a21c10;
+    --clip: 15px;
+    --border-size: 1px;
 }

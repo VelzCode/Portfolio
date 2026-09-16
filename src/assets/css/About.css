@@ -10,7 +10,29 @@
     gap: 10px;
     margin: 20px;
     padding: 20px;
-    border: 2px solid var(--box-shadow);
+    /* Clip */
+    position: relative;
+    isolation: isolate;
+    border: none;
+    background: var(--box-shadow);
+    clip-path: polygon(
+        0 0, calc(100% - var(--clip)) 0, 100% var(--clip),
+        100% calc(100% - var(--clip)), calc(100% - var(--clip)) 100%, 0 100%
+    );
+}
+
+.col-b::before {
+    content: "";
+    position: absolute;
+    inset: var(--border-size);
+    background: white;
+    clip-path: polygon(
+        0 0, calc(100% - (var(--clip) - var(--border-size))) 0,
+        100% calc(var(--clip) - var(--border-size)),
+        100% calc(100% - (var(--clip) - var(--border-size))),
+        calc(100% - (var(--clip) - var(--border-size))) 100%, 0 100%
+    );
+    z-index: -1;
 }
 
 .col-p-wrapper {
