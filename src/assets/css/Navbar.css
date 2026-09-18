@@ -7,9 +7,12 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    background: linear-gradient(135deg, #0b111e 0%, #121b2d 100%);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+
+.nav-hr {
+    width: 98%;
+    margin: 0 auto;
+    border: 1px solid var(--midHr-color);
 }
 
 .nav-l {

@@ -1,8 +1,13 @@
 :root {
+    --color-darker-white: #a29797;
     --color: #c1baba;
-    --bgcolor: #000;
-    --dplogo-color: #0b111e;
-    --darkhr-color: #191e29;
+    --color-brighter-white: #eeebeb;
+    --midHr-color: #726c6c;
+    --logo-Parrot-color: #f8f0e1;
+    --parrot-btnColor: #f4bc14;
+    --bgColor: #000;
+    --dpLogo-color: #0b111e;
+    --darkHr-color: #191e29;
     --box-shadow: rgba(56, 189, 248, 0.25);
     --text-on-white: #d21818;
     --text-on-white2: #a21c10;

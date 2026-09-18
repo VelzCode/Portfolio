@@ -8,13 +8,13 @@
     width: 100%;
     max-width: 900px;
     gap: 10px;
-    margin: 20px;
+    margin: 0 20px;
     padding: 20px;
     /* Clip */
     position: relative;
     isolation: isolate;
     border: none;
-    background: var(--box-shadow);
+    background: transparent;
     clip-path: polygon(
         0 0, calc(100% - var(--clip)) 0, 100% var(--clip),
         100% calc(100% - var(--clip)), calc(100% - var(--clip)) 100%, 0 100%
@@ -25,7 +25,7 @@
     content: "";
     position: absolute;
     inset: var(--border-size);
-    background: white;
+    background: transparent;
     clip-path: polygon(
         0 0, calc(100% - (var(--clip) - var(--border-size))) 0,
         100% calc(var(--clip) - var(--border-size)),
@@ -43,6 +43,7 @@
 }
 
 .col-h2 {
+    color: var(--color-brighter-white);
     font-size: 16px;
     font-weight: 700;
     text-align: left;
@@ -53,7 +54,18 @@
 }
 
 .col-p-main {
-    font-size: 1.1rem;
-    padding-bottom: 18px;
+    color: var(--color);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.col-p-intro {
+    color: var(--color-darker-white);
+    font-size: 1rem;
+}
+
+.col-p-final {
+    color: var(--color-darker-white);
+    font-size: 1rem;
 }
 
