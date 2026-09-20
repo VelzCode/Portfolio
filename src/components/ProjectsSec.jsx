@@ -38,7 +38,8 @@ function ProjectsSec () {
             boxShadow: "0px 0px 40px rgba(56, 189, 248, 0.25)"
         }
     };
-    const cardTwoVariant = {
+    
+    const cardTwoVariants = {
         hidden: {
             opacity: 0,
             y: 80
@@ -48,7 +49,7 @@ function ProjectsSec () {
             opacity: 1,
             y: 0,
             scale: 1,
-            boxShadow: "none",
+            boxShadow: "0px 0px 0px rgba(255, 170, 60, 0)",
             transition: {
                 duration: 1.5,
                 delay: delay
@@ -58,9 +59,13 @@ function ProjectsSec () {
         hover: {
             y: -2,
             scale: 1.012,
-            /*boxShadow: "0px 0px 40px rgba(56, 189, 248, 0.25)",*/
+            boxShadow: "0px 0px 35px rgba(56, 189, 248, 0.5)",
+            transition: {
+                duration: 0.2
+            }
         }
     };
+
     const imageVariants = {
         show: {
             scale: 1
@@ -77,7 +82,7 @@ function ProjectsSec () {
                 variants={cardVariants}
                 initial="hidden"
                 animate="show"
-                custom={0}
+                custom={0.05}
                 whileHover="hover"
             >
                 <motion.div
@@ -100,21 +105,28 @@ function ProjectsSec () {
                  <div className="p1-link-wrapper">
                     <motion.a
                         href="#" className="liveBtn-link buttons-p1"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.97 }}
+                        whileHover={{ y: -1, scale: 1.015 }}
+                        whileTap={{ y: 2, scale: 0.985 }}
                     >
                         Live Site
                     </motion.a>
                     <motion.a
                         href="https://github.com/acmainier/devpulse" className="buttons-p1"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.97 }}
+                        whileHover={{ y: -1, scale: 1.015 }}
+                        whileTap={{ y: 2, scale: 0.985 }}
                     >
                         Source Code
                     </motion.a>
                 </div>
             </motion.div>
-                <div className="project-two">
+                <motion.div
+                    className="project-two"
+                    variants={cardTwoVariants}
+                    initial="hidden"
+                    animate="show"
+                    custom={0.20}
+                    whileHover="hover"
+                >
                     <div className="parrot-wrapper">
                     <img src={parrotImg} alt="Parrot Logo" />
                     </div>
@@ -129,13 +141,13 @@ function ProjectsSec () {
                         <a href="https://vibecoder123.github.io/w5-app/" className="liveBtn-link button-p2">Live App</a>
                         <a href="https://github.com/Vibecoder123/w5-app" className="button-p2">Source Code</a>
                     </div>
-                </div>
+                </motion.div>
             <motion.div
                 className="project-three"
                 variants={cardVariants}
                 initial="hidden"
                 animate="show"
-                custom={0.55}
+                custom={0.35}
                 whileHover="hover"
             >
                 <div className="img-wrapper-p3">

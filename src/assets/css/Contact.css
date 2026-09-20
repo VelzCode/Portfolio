@@ -1,1 +1,40 @@
 @import "./Variables.css";
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    border: 2px solid red;
+}
+
+.form-header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    color: var(--color);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 2px solid blue;
+}
+
+.message-field {
+    grid-column: 1 / -1;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field label {
+    color: var(--color);
+}
