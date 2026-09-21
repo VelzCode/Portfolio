@@ -4,8 +4,8 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
-    plugins: [
-    react(),
+    base: "/Portfolio/",
+    plugins: [react(),
     babel({ presets: [reactCompilerPreset()] })
     ],
 })
