@@ -6,6 +6,7 @@ import About from "./components/About.jsx";
 import ProjectsSec from "./components/ProjectsSec.jsx";
 import SkillsBar from "./components/SkillsBar.jsx";
 import Form from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <ProjectsSec />
             <SkillsBar />
             <Form />
+            <Footer />
         </>
     );
 }

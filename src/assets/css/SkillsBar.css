@@ -32,16 +32,16 @@
 .skills-section {
     width: 100%;
     overflow: hidden;
-    padding: 10px 0;
+    padding: 5px 0;
     background: transparent;
     border-top: 1px solid var(--midhr-color);
     border-bottom: 1px solid var(--midhr-color);
-    box-shadow: 0 1px 15px rgba(184, 106, 0, 1);
+    box-shadow: 0 0 6px rgba(184, 106, 0, 1);
 }
 
 .skills-header {
     text-align: center;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 20px 0;
     color: var(--color-brighter-white);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }

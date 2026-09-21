@@ -9,9 +9,25 @@
 }
 
 body {
-    background-image: url(../images/bg-image.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(8, 188, 211, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 60%,
+            rgba(53, 242, 165, 0.05),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #020812 0%,
+            #06111f 45%,
+            #020812 100%
+        );
+
+    background-attachment: fixed;
+    min-height: 100vh;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }

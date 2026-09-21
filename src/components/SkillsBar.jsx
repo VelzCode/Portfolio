@@ -17,10 +17,31 @@ function SkillsBar () {
         { name: "WordPress", icon: FaWordpress, color: "#21759b" }
     ];
 
+    const skillsVariants = {
+        hidden: {
+            opacity: 0,
+            y: 30
+        },
+
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.2,
+                delay: 0.1
+            }
+        }
+    };
+
     return (
         <>
-            <h2 className="skills-header">Skills & Technologies</h2>
-            <section className="skills-section">
+            <motion.section
+                className="skills-section"
+                variants={skillsVariants}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+            >
                 <motion.div
                     className="skills-track"
                     initial={{ x: "-50%" }}
@@ -55,7 +76,7 @@ function SkillsBar () {
                         ))}
                     </div>
                 </motion.div>
-            </section>
+            </motion.section>
         </>
     );
 }

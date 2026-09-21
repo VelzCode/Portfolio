@@ -1,0 +1,54 @@
+@import "./Variables.css";
+
+@media (min-width: 2000px) {
+    .layout-wrapper {
+        max-width: 2500px;
+        gap: 150px;
+    }
+
+    .p2-hr {
+        transform: translateY(-5px);
+    }
+
+    .img-p3 {
+        margin-top: 50px;
+    }
+
+    .p3-hr {
+        margin-top: 50px;
+    }
+
+    .button-p2 {
+        transform: translateY(5px);
+    }
+
+    .button-p3 {
+        transform: translateY(-5px);
+    }
+
+    .buttons-p1 {
+        transform: translateY(-5px);
+    }
+}
+
+@media (min-width: 3000px) {
+    .layout-wrapper {
+        max-width: 3500px;
+        gap: 150px;
+    }
+    .img-p3 {
+        margin-top: 210px;
+    }
+
+    .p2-hr {
+        transform: translateY(-15px);
+    }
+
+    .p3-hr {
+        transform: translateY(162px);
+    }
+
+    .button-p3 {
+        transform: translateY(145px);
+    }
+}

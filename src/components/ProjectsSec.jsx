@@ -104,7 +104,7 @@ function ProjectsSec () {
                 </ul>
                  <div className="p1-link-wrapper">
                     <motion.a
-                        href="#" className="liveBtn-link buttons-p1"
+                        href="https://devpulse-pink.vercel.app/" className="liveBtn-link buttons-p1"
                         whileHover={{ y: -1, scale: 1.015 }}
                         whileTap={{ y: 2, scale: 0.985 }}
                     >

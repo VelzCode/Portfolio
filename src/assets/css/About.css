@@ -62,10 +62,11 @@
 .col-p-intro {
     color: var(--color-darker-white);
     font-size: 1rem;
+    line-height: 1.6rem;
 }
 
 .col-p-final {
     color: var(--color-darker-white);
     font-size: 1rem;
+    line-height: 1.6rem;
 }
-
