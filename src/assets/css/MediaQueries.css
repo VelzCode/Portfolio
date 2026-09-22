@@ -27,7 +27,7 @@
     }
 
     .buttons-p1 {
-        transform: translateY(-5px);
+        margin-top: -5px;
     }
 }
 
@@ -36,12 +36,17 @@
         max-width: 3500px;
         gap: 150px;
     }
-    .img-p3 {
-        margin-top: 210px;
+
+    .buttons-p1 {
+        margin-top: 10px;
     }
 
     .p2-hr {
         transform: translateY(-15px);
+    }
+
+    .img-p3 {
+        margin-top: 210px;
     }
 
     .p3-hr {
@@ -50,5 +55,27 @@
 
     .button-p3 {
         transform: translateY(145px);
+    }
+
+    .p3-h2 {
+        position: relative;
+        top: 162px;
+    }
+
+    .p3-list-wrapper {
+        transform: translateY(170px);
+    }
+
+    .contact-content {
+        padding: 50px 0;
+    }
+
+    .footer {
+        margin: 50px 0;
+    }
+
+    .skills-group {
+        gap: 300px;
+        padding-right: 300px;
     }
 }
